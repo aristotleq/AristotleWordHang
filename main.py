@@ -36,7 +36,7 @@ def printGuessAccuracy(guess, actual):
     # Check if the letter at this index of the user's guess is in the secret word AT ALL or not
     if(letter in secret):
 
-      # If the letter is in the secret word, is it also AT THE CURRENT INDEX in the secret word?
+      # Check if the letter is also at the current index in the secret word
       if(letter == secret[index]):
 
         # Then print it out with a green background
@@ -70,7 +70,7 @@ def getSixLetterInput(guess):
 
 ### Main Program ###
 
-# Display a welcome message and friendly title
+# Display a friendly title and a welcome message
 # Display title of quiz show in ASCII art
 print(r"""
 
@@ -82,10 +82,12 @@ __        _____  ____  ____       _   _    _    _   _  ____
                                                              
 
 """)
-
-
+print("-   -   -   -   -   -")
 print("Welcome to Word Hang!")
-print("=============")
+print("-   -   -   -   -   -")
+print()
+print("====={ Rules }=======")
+print()
 
 # Write the logic of the game here!
 print("You have six tries to get the word correct")
@@ -93,6 +95,7 @@ print("The word is SIX CHARACTERS long, and you must enter a guess of this lengt
 print("If a letter is in the correct place, it will be green")
 print("If a letter is in the word but NOT in the correct place, it will be yellow")
 print("If the letter is NOT in the word, it will be red")
+print("=====================")
 print()
 print("Ok, time to start! When you are ready,")
 print()
@@ -116,7 +119,7 @@ while(count < 6 and guess != actual):
     print("You are out of tries.")
     
     
-# When they've finished, tell them if they won or lost
+# When user is finished, tell them if they won or lost
 if(guess == actual):
   print()
   print()
