@@ -65,7 +65,6 @@ def getSixLetterInput(guess):
     print()
   return guessUser.lower()
 
-# End of the function definitions
   
 
 ### Main Program ###
