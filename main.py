@@ -34,7 +34,7 @@ def printGuessAccuracy(guess, actual):
     secret = actual
     
     # Check if the letter at this index of the user's guess is in the secret word AT ALL or not
-    if(letter == secret[index]):
+    if(letter in secret):
 
       # If the letter is in the secret word, is it also AT THE CURRENT INDEX in the secret word?
       if(letter == secret[index]):
@@ -93,6 +93,8 @@ print("The word is SIX CHARACTERS long, and you must enter a guess of this lengt
 print("If a letter is in the correct place, it will be green")
 print("If a letter is in the word but NOT in the correct place, it will be yellow")
 print("If the letter is NOT in the word, it will be red")
+print()
+print("Ok, time to start! When you are ready,")
 print()
 
 actual = "secret"
