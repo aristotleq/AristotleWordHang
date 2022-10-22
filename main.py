@@ -61,10 +61,12 @@ def printGuessAccuracy(guess, actual):
 def getSixLetterInput(guess):
   guessUser = ""
   while(len(guessUser) != 6):
-    guessUser = input("Enter a six letter word: ")
+    print()
+    print()
+    guessUser = input("Enter a six letter word: ")    
     print()
   return guessUser.lower()
-
+    
   
 
 ### Main Program ###
